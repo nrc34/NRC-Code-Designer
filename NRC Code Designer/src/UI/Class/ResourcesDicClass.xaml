@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="ClassBackgroundBrush" Color="AntiqueWhite"/>
+    <SolidColorBrush x:Key="ClassBackgroundMoseOverBrush" Color="White"/>
+    <SolidColorBrush x:Key="ClassBorderBrush" Color="Black"/>
+    <SolidColorBrush x:Key="InheritancePathBrush" Color="Gray"/>
+    
+</ResourceDictionary>

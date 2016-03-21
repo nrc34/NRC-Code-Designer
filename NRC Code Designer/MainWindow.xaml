@@ -1,0 +1,9 @@
+﻿<Window x:Class="NRC_Code_Designer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:class_control="clr-namespace:NRC_Code_Designer.src.UI.Class"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid x:Name="GridMain">
+        
+    </Grid>
+</Window>

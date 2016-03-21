@@ -1,0 +1,18 @@
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\bin\Debug\NRC Code Designer.exe.config
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\NRC Code Designer.csprojResolveAssemblyReference.cache
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\MainWindow.baml
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\MainWindow.g.cs
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\App.g.cs
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\NRC Code Designer_MarkupCompile.cache
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\NRC Code Designer.g.resources
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\NRC_Code_Designer.Properties.Resources.resources
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\NRC Code Designer.csproj.GenerateResource.Cache
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\bin\Debug\NRC Code Designer.exe
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\bin\Debug\NRC Code Designer.pdb
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\NRC Code Designer.exe
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\NRC Code Designer.pdb
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\Class\ResourcesDicClass.baml
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\Class\UserControlClass.baml
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\App.baml
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\Class\UserControlClass.g.cs
+c:\users\nuno costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\NRC Code Designer_MarkupCompile.lref

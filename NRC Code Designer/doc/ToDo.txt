@@ -1,0 +1,3 @@
+﻿replace point by vector in IDisplayAble position
+
+throw exception when try to generate a path without a usercontrol from base class
