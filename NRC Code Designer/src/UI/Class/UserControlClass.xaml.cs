@@ -51,7 +51,7 @@ namespace NRC_Code_Designer.src.UI.Class
 
                 var position2Parent = (Vector)Mouse.GetPosition((Grid)this.Parent);
                 
-                    class2Use.Position = (Point)(position2Parent - new Vector(75, 15));
+                    class2Use.Position = (Point)(position2Parent - new Vector(gridClass.ActualWidth/2, 15));
                     gridClass.Margin = new Thickness(class2Use.Position.X,
                                                      class2Use.Position.Y,
                                                      0, 0);

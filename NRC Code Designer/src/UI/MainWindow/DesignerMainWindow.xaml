@@ -1,0 +1,74 @@
+﻿<Window x:Name="mainWindow" 
+        x:Class="NRC_Code_Designer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:class_control="clr-namespace:NRC_Code_Designer.src.UI.Class"
+        xmlns:userControlToolBar="clr-namespace:NRC_Code_Designer.src.UI.ToolBar"
+        xmlns:userControlToolBox="clr-namespace:NRC_Code_Designer.src.UI.ToolBox"
+        Title="NRC Code Designer" 
+        WindowStartupLocation="CenterScreen" 
+        WindowState="Maximized" 
+        ScrollViewer.VerticalScrollBarVisibility="Disabled" 
+        MinWidth="800" MinHeight="600" 
+        SnapsToDevicePixels="True">
+    <Grid x:Name="GridMain">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="269*"/>
+            <RowDefinition Height="400*"/>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="gridToolBar" 
+              Grid.Row="0"
+              Grid.ColumnSpan="3"
+              Background="#FF2D2D30">
+            <userControlToolBar:ToolBar 
+                HorizontalAlignment="Left"/>
+        </Grid>
+
+        <Grid x:Name="gridToolBox"
+              Grid.Row="1"
+              Grid.Column="0"
+              Grid.RowSpan="2"
+              Background="#FF1A1A1A">
+            <userControlToolBox:UserControlToolBox/>
+
+        </Grid>
+        
+        <Grid x:Name="gridProjectNamespacesTree"
+              Grid.Row="1"
+              Grid.Column="2" 
+              Background="#FF1A1A1A">
+            
+        </Grid>
+        
+        <Grid x:Name="gridDetails"
+              Grid.Row="2"
+              Grid.Column="2" Background="#FF1A1A1A">
+            
+        </Grid >
+
+        <ScrollViewer x:Name="scrollViewerDesigner" 
+              Grid.Column="1"
+              Grid.Row="1"
+              Grid.RowSpan="2" Background="Black" 
+              HorizontalScrollBarVisibility="Visible" >
+        
+        <Grid x:Name="gridDesigner"
+              Grid.Column="1"
+              Grid.Row="1"
+              Grid.RowSpan="2" Background="Black" 
+              ClipToBounds="True"
+              Width="Auto"
+              Height="Auto"
+              ScrollViewer.HorizontalScrollBarVisibility="Auto" 
+              ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        </ScrollViewer>
+
+    </Grid>
+</Window>

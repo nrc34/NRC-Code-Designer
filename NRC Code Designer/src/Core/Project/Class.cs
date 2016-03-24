@@ -14,17 +14,23 @@ namespace NRC_Code_Designer.src.Core
 {
     public class Class : Project.Entity, IClass, IDisplayAble
     {
+        #region ... Fields ...
         private src.Core.Class derivedFrom;
-        private Point position;
+        private Point position; 
+        #endregion
 
+        #region ... Properties ...
         /// <summary>
         /// Class position.
         /// </summary>
-        public Point Position 
-        { 
-            get { return position; } 
-            set { position = value; 
-                  OnMoved(new EventArgs()); } 
+        public Point Position
+        {
+            get { return position; }
+            set
+            {
+                position = value;
+                OnMoved(new EventArgs());
+            }
         }
 
         /// <summary>
@@ -38,6 +44,11 @@ namespace NRC_Code_Designer.src.Core
         public UI.Class.UserControlClass UserControl { get; set; }
 
         /// <summary>
+        /// Class access modifier. Can be default, internal and public.
+        /// </summary>
+        public ClassAccessModifiers AccessModifier { get; set; }
+
+        /// <summary>
         /// Base class from wich this class derive from.
         /// </summary>
         public src.Core.Class DerivedFrom
@@ -45,7 +56,7 @@ namespace NRC_Code_Designer.src.Core
             get
             {
                 return derivedFrom;
-            } 
+            }
             set
             {
                 derivedFrom = value;
@@ -61,6 +72,11 @@ namespace NRC_Code_Designer.src.Core
                     createInheritancePath(InheritancePath);
                 };
 
+                this.UserControl.gridClass.SizeChanged += (s, e) =>
+                {
+                    createInheritancePath(InheritancePath);
+                };
+
                 derivedFrom.Moved += (s, e) =>
                 {
                     createInheritancePath(InheritancePath);
@@ -70,26 +86,28 @@ namespace NRC_Code_Designer.src.Core
                 {
                     createInheritancePath(InheritancePath);
                 };
-            } 
+            }
         }
-
-        
 
         /// <summary>
         /// Inheritance path to link between this class to base class.
         /// </summary>
         public Path InheritancePath { get; set; }
-        
+
         /// <summary>
         /// List of class properties.
         /// </summary>
-        public List<Property> Properties { get; set; }
+        public List<Property> Properties { get; set; } 
+        #endregion
 
+        #region ... Methods ...
 
+        #region .. Constructors ..
         /// <summary>
         /// Empty constructor.
         /// </summary>
-        public Class() : this(string.Empty)
+        public Class()
+            : this(string.Empty)
         {
         }
 
@@ -101,6 +119,8 @@ namespace NRC_Code_Designer.src.Core
         {
             Name = name;
 
+            AccessModifier = ClassAccessModifiers.@default;
+
             Properties = new List<Property>();
 
             Position = new Point(0, 0);
@@ -111,20 +131,18 @@ namespace NRC_Code_Designer.src.Core
         /// </summary>
         /// <param name="name">Class name.</param>
         /// <param name="position">Class position.</param>
-        public Class(string name, Point position) : this(name)
+        public Class(string name, Point position)
+            : this(name)
         {
             Position = position;
-        }
+        } 
+        #endregion
 
+        #region .. Public Methods ..
+        
+        #endregion
 
-        public event EventHandler Moved;
-
-        protected virtual void OnMoved(EventArgs e)
-        {
-            if (Moved != null)
-                Moved(this, e);
-        }
-
+        #region .. Private Methods ..
         private void createInheritancePath(Path InheritancePath)
         {
             InheritancePath.Stroke = (Brush)App.Current.
@@ -142,13 +160,13 @@ namespace NRC_Code_Designer.src.Core
             var arrow1Line = new LineGeometry();
             arrow1Line.StartPoint = baseClassStartPoint;
             arrow1Line.EndPoint = new Point(
-                baseClassStartPoint.X - arrowWidth/2,
+                baseClassStartPoint.X - arrowWidth / 2,
                 baseClassStartPoint.Y + arrowHeight);
 
             var arrow2Line = new LineGeometry();
             arrow2Line.StartPoint = baseClassStartPoint;
             arrow2Line.EndPoint = new Point(
-                baseClassStartPoint.X + arrowWidth/2,
+                baseClassStartPoint.X + arrowWidth / 2,
                 baseClassStartPoint.Y + arrowHeight);
 
             var arrow3Line = new LineGeometry();
@@ -172,7 +190,7 @@ namespace NRC_Code_Designer.src.Core
                 baseClassStartPoint.X,
                 baseClassStartPoint.Y + distFromBase);
             line2FromBase.EndPoint = new Point(
-                this.position.X + this.UserControl.gridClass.ActualWidth/2,
+                this.position.X + this.UserControl.gridClass.ActualWidth / 2,
                 baseClassStartPoint.Y + distFromBase);
 
             var line3FromBase = new LineGeometry();
@@ -192,6 +210,19 @@ namespace NRC_Code_Designer.src.Core
             geometryGroup.Children.Add(line3FromBase);
 
             InheritancePath.Data = geometryGroup;
-        }
+        }  
+        #endregion
+
+        #endregion
+
+        #region ... Events ...
+        public event EventHandler Moved;
+
+        protected virtual void OnMoved(EventArgs e)
+        {
+            if (Moved != null)
+                Moved(this, e);
+        } 
+        #endregion
     }
 }

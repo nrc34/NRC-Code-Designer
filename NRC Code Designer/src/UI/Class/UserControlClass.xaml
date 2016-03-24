@@ -6,11 +6,11 @@
              mc:Ignorable="d" d:DesignWidth="150"  Width="Auto" Height="Auto">
 
     <Grid x:Name="gridClass"
-          Width="150" Height="Auto" 
+          Width="Auto" Height="Auto" 
           VerticalAlignment="Top"
           HorizontalAlignment="Left">
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -54,7 +54,7 @@
                Grid.Row="0" 
                Content="{Binding}" 
                HorizontalAlignment="Center" 
-               VerticalAlignment="Center"/>
+               VerticalAlignment="Center" Padding="15,5,15,2"/>
 
         <Expander Grid.Row="1">
             <ItemsControl x:Name="itemsControlProperties" Grid.Row="1">

@@ -41,6 +41,14 @@ namespace NRC_Code_Designer {
     public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
         
         
+        #line 1 "..\..\MainWindow.xaml"
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
+        internal NRC_Code_Designer.MainWindow mainWindow;
+        
+        #line default
+        #line hidden
+        
+        
         #line 6 "..\..\MainWindow.xaml"
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1823:AvoidUnusedPrivateFields")]
         internal System.Windows.Controls.Grid GridMain;
@@ -79,6 +87,9 @@ namespace NRC_Code_Designer {
             switch (connectionId)
             {
             case 1:
+            this.mainWindow = ((NRC_Code_Designer.MainWindow)(target));
+            return;
+            case 2:
             this.GridMain = ((System.Windows.Controls.Grid)(target));
             return;
             }

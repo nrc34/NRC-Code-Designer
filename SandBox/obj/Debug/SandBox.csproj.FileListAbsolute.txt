@@ -1,0 +1,5 @@
+C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\SandBox\bin\Debug\SandBox.exe.config
+C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\SandBox\bin\Debug\SandBox.exe
+C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\SandBox\bin\Debug\SandBox.pdb
+C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\SandBox\obj\Debug\SandBox.exe
+C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\SandBox\obj\Debug\SandBox.pdb

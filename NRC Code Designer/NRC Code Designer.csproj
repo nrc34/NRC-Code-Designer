@@ -54,6 +54,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="src\Core\Project\Class.cs" />
+    <Compile Include="src\Core\Project\ClassAccessModifiers.cs" />
     <Compile Include="src\Core\Project\Entity.cs" />
     <Compile Include="src\Core\Project\IClass.cs" />
     <Compile Include="src\Core\Project\IDisplayAble.cs" />
@@ -64,7 +65,13 @@
     <Compile Include="src\UI\Class\UserControlClass.xaml.cs">
       <DependentUpon>UserControlClass.xaml</DependentUpon>
     </Compile>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="src\UI\ToolBar\ToolBar.xaml.cs">
+      <DependentUpon>ToolBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\UI\ToolBox\UserControlToolBox.xaml.cs">
+      <DependentUpon>UserControlToolBox.xaml</DependentUpon>
+    </Compile>
+    <Page Include="src\UI\MainWindow\DesignerMainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -72,8 +79,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="src\UI\MainWindow\DesignerMainWindow.xaml.cs">
+      <DependentUpon>DesignerMainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="src\UI\Class\ResourcesDicClass.xaml">
@@ -81,6 +88,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="src\UI\Class\UserControlClass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="src\UI\ToolBar\ToolBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="src\UI\ToolBox\UserControlToolBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -114,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="res\" />
+    <Folder Include="src\UI\Details\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="doc\ToDo.txt" />

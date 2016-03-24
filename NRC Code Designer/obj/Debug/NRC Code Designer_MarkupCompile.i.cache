@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\App.xaml
-3166005400
+5-482520585
 
-18-1671966159
+21-1252078912
 12-1401562060
-MainWindow.xaml;src\UI\Class\ResourcesDicClass.xaml;src\UI\Class\UserControlClass.xaml;
+src\UI\MainWindow\DesignerMainWindow.xaml;src\UI\Class\ResourcesDicClass.xaml;src\UI\Class\UserControlClass.xaml;src\UI\ToolBar\ToolBar.xaml;src\UI\ToolBox\UserControlToolBox.xaml;
 
 False
 
