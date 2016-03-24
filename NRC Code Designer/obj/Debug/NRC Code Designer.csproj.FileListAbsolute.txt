@@ -21,3 +21,5 @@ C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC 
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\ToolBox\UserControlToolBox.baml
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\ToolBox\UserControlToolBox.g.cs
+C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\ToolBox\UserControlToolBoxItem.baml
+C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\ToolBox\UserControlToolBoxItem.g.cs

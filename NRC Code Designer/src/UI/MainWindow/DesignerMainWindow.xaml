@@ -10,10 +10,10 @@
         WindowState="Maximized" 
         ScrollViewer.VerticalScrollBarVisibility="Disabled" 
         MinWidth="800" MinHeight="600" 
-        SnapsToDevicePixels="True">
+        SnapsToDevicePixels="True" WindowStyle="None">
     <Grid x:Name="GridMain">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="150"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>

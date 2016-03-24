@@ -54,7 +54,9 @@
                Grid.Row="0" 
                Content="{Binding}" 
                HorizontalAlignment="Center" 
-               VerticalAlignment="Center" Padding="15,5,15,2"/>
+               VerticalAlignment="Center" 
+               Padding="15,5,15,2"
+               FontFamily="Consolas"/>
 
         <Expander Grid.Row="1">
             <ItemsControl x:Name="itemsControlProperties" Grid.Row="1">
@@ -65,7 +67,8 @@
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Label Content="{Binding Name}"/>
+                        <Label Content="{Binding Name}"
+                               FontFamily="Consolas"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
@@ -80,7 +83,8 @@
                 </ItemsControl.ItemsPanel>
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
-                        <Label Content="{Binding Name}"/>
+                        <Label Content="{Binding Name}"
+                               FontFamily="Consolas"/>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
