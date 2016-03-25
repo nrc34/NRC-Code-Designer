@@ -65,6 +65,9 @@
     <Compile Include="src\UI\Class\UserControlClass.xaml.cs">
       <DependentUpon>UserControlClass.xaml</DependentUpon>
     </Compile>
+    <Compile Include="src\UI\Panel\UserControlPanel.xaml.cs">
+      <DependentUpon>UserControlPanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="src\UI\ToolBar\ToolBar.xaml.cs">
       <DependentUpon>ToolBar.xaml</DependentUpon>
     </Compile>
@@ -91,6 +94,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="src\UI\Class\UserControlClass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="src\UI\Panel\UserControlPanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

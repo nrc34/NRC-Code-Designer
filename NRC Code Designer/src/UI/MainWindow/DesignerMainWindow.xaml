@@ -5,12 +5,14 @@
         xmlns:class_control="clr-namespace:NRC_Code_Designer.src.UI.Class"
         xmlns:userControlToolBar="clr-namespace:NRC_Code_Designer.src.UI.ToolBar"
         xmlns:userControlToolBox="clr-namespace:NRC_Code_Designer.src.UI.ToolBox"
+        xmlns:userControlPanel="clr-namespace:NRC_Code_Designer.src.UI.Panel"
         Title="NRC Code Designer" 
         WindowStartupLocation="CenterScreen" 
         WindowState="Maximized" 
         ScrollViewer.VerticalScrollBarVisibility="Disabled" 
         MinWidth="800" MinHeight="600" 
-        SnapsToDevicePixels="True" WindowStyle="None">
+        SnapsToDevicePixels="True" 
+        WindowStyle="ThreeDBorderWindow">
     <Grid x:Name="GridMain">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
@@ -35,7 +37,7 @@
               Grid.Row="1"
               Grid.Column="0"
               Grid.RowSpan="2"
-              Background="#FF1A1A1A">
+              Background="Black">
             <userControlToolBox:UserControlToolBox/>
 
         </Grid>
@@ -43,14 +45,19 @@
         <Grid x:Name="gridProjectNamespacesTree"
               Grid.Row="1"
               Grid.Column="2" 
-              Background="#FF1A1A1A">
-            
+              Background="Black">
+            <userControlPanel:UserControlPanel 
+                Label="Project Namespaces"
+                Width="196"/>
         </Grid>
         
         <Grid x:Name="gridDetails"
               Grid.Row="2"
-              Grid.Column="2" Background="#FF1A1A1A">
-            
+              Grid.Column="2" 
+              Background="Black">
+            <userControlPanel:UserControlPanel 
+                Label="Details"
+                Width="196"/>
         </Grid >
 
         <ScrollViewer x:Name="scrollViewerDesigner" 

@@ -27,9 +27,10 @@
                         <EventTrigger.Actions>
                             <BeginStoryboard>
                                 <Storyboard>
-                                    <ColorAnimation To="#FF3E3E42"
-                                                            Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
-                                                            Duration="0:0:0.1"/>
+                                    <ColorAnimation 
+                                        To="#FF3E3E42"
+                                        Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
+                                        Duration="0:0:0.1"/>
                                 </Storyboard>
                             </BeginStoryboard>
                         </EventTrigger.Actions>
@@ -38,9 +39,10 @@
                         <EventTrigger.Actions>
                             <BeginStoryboard>
                                 <Storyboard>
-                                    <ColorAnimation To="Black"
-                                                            Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
-                                                            Duration="0:0:0.1"/>
+                                    <ColorAnimation 
+                                        To="Black"
+                                        Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
+                                        Duration="0:0:0.1"/>
                                 </Storyboard>
                             </BeginStoryboard>
                         </EventTrigger.Actions>
