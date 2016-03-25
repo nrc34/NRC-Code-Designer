@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\App.xaml
-7578291065
+8-912717188
 
 23-1820045548
 12-1401562060
-src\UI\MainWindow\DesignerMainWindow.xaml;src\UI\Class\ResourcesDicClass.xaml;src\UI\Class\UserControlClass.xaml;src\UI\Panel\UserControlPanel.xaml;src\UI\ToolBar\ToolBar.xaml;src\UI\ToolBox\UserControlToolBox.xaml;src\UI\ToolBox\UserControlToolBoxItem.xaml;
+res\Fonts\ResourceDictionaryFonts.xaml;src\UI\MainWindow\DesignerMainWindow.xaml;src\UI\Class\ResourcesDicClass.xaml;src\UI\Class\UserControlClass.xaml;src\UI\Panel\UserControlPanel.xaml;src\UI\ToolBar\ToolBar.xaml;src\UI\ToolBox\UserControlToolBox.xaml;src\UI\ToolBox\UserControlToolBoxItem.xaml;
 
-True
+False
 

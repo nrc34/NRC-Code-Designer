@@ -17,7 +17,8 @@
                        Padding="0"
                        Content="{Binding Path=Label}" 
                        FontSize="14" 
-                       VerticalContentAlignment="Center" FontFamily="Consolas"
+                       VerticalContentAlignment="Center"
+                       FontFamily="{StaticResource MinecraftiaFont}"
                        />
         <Grid.Style>
             <Style TargetType="Grid">

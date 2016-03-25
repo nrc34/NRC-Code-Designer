@@ -22,7 +22,7 @@
                Grid.Column="0"
                Content="{Binding Label}" 
                Foreground="White" 
-               FontFamily="Consolas" 
+               FontFamily="{StaticResource MinecraftiaFont}" 
                Padding="0" 
                VerticalContentAlignment="Center" 
                HorizontalContentAlignment="Center" 

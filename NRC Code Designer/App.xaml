@@ -6,6 +6,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="src/UI/Class/ResourcesDicClass.xaml" />
+                <ResourceDictionary Source="res/Fonts/ResourceDictionaryFonts.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

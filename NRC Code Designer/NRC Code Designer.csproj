@@ -77,6 +77,10 @@
     <Compile Include="src\UI\ToolBox\UserControlToolBoxItem.xaml.cs">
       <DependentUpon>UserControlToolBoxItem.xaml</DependentUpon>
     </Compile>
+    <Page Include="res\Fonts\ResourceDictionaryFonts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="src\UI\MainWindow\DesignerMainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -137,12 +141,12 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <Resource Include="res\Fonts\Minecraftia.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="res\" />
     <Folder Include="src\UI\Details\" />
   </ItemGroup>
   <ItemGroup>

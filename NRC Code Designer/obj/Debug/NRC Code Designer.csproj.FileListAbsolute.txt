@@ -25,3 +25,4 @@ C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC 
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\ToolBox\UserControlToolBoxItem.g.cs
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\Panel\UserControlPanel.baml
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\Panel\UserControlPanel.g.cs
+C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\res\Fonts\ResourceDictionaryFonts.baml
