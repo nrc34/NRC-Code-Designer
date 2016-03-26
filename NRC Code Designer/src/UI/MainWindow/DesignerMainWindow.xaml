@@ -24,17 +24,16 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="32"/>
-            <RowDefinition Height="19"/>
             <RowDefinition Height="25"/>
             <RowDefinition Height="5"/>
-            <RowDefinition Height="174*"/>
-            <RowDefinition Height="270*"/>
+            <RowDefinition Height="225"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="259*"/>
         </Grid.RowDefinitions>
 
         <Grid Grid.ColumnSpan="6"
               Grid.Row="0"
-              Background="Black" 
-              Grid.RowSpan="2"
+              Background="Black"
               >
             <Label FontFamily="{StaticResource FontTitle}"
                    TextOptions.TextRenderingMode="Aliased"
@@ -51,7 +50,8 @@
                Width="32"
                Height="32"
                Foreground="#FF8F8F8F" 
-               FontSize="14" 
+               FontSize="14"
+               FontFamily="{StaticResource FontTitle}"
                Padding="0" 
                HorizontalAlignment="Center" 
                VerticalAlignment="Center" 
@@ -99,6 +99,7 @@
                Height="32"
                Foreground="#FF8F8F8F" 
                FontSize="14" 
+               FontFamily="{StaticResource FontTitle}"
                Padding="0" 
                HorizontalAlignment="Center" 
                VerticalAlignment="Center" 
@@ -146,6 +147,7 @@
                Height="32"
                Foreground="#FF8F8F8F" 
                FontSize="14" 
+               FontFamily="{StaticResource FontTitle}"
                Padding="0" 
                HorizontalAlignment="Center" 
                VerticalAlignment="Center" 
@@ -184,12 +186,12 @@
             </Label.Style>
         </Label>
 
-        <Grid Grid.Row="3"
+        <Grid Grid.Row="2"
               Background="Black"
               Grid.ColumnSpan="6"/>
 
         <Grid x:Name="gridToolBar" 
-              Grid.Row="2"
+              Grid.Row="1"
               Grid.ColumnSpan="6"
               Background="#FF2D2D30">
             <userControlToolBar:ToolBar 
@@ -197,9 +199,9 @@
         </Grid>
 
         <Grid x:Name="gridToolBox"
-              Grid.Row="4"
+              Grid.Row="3"
               Grid.Column="0"
-              Grid.RowSpan="2"
+              Grid.RowSpan="3"
               Background="Black">
             <userControlPanel:UserControlPanel
                 Label="Toolbox"
@@ -208,31 +210,36 @@
         </Grid>
 
         <Grid x:Name="gridProjectNamespacesTree"
-              Grid.Row="4"
+              Grid.Row="3"
               Grid.Column="2" 
               Background="Black" 
               Grid.ColumnSpan="4">
             <userControlPanel:UserControlPanel
-                PanelGrid="{DynamicResource GridProjectNamespaces}"
                 Label="Project Namespaces"
-                Width="196"
-                Height="263"
-                VerticalAlignment="Top"/>
+                Width="201"
+                />
         </Grid>
-
+        
+        <Grid Grid.Column="2"
+              Grid.Row="4"
+              Grid.ColumnSpan="4"
+              Background="Black"/>
+        
         <Grid x:Name="gridDetails"
               Grid.Row="5"
               Grid.Column="2" 
-              Background="Black" Grid.ColumnSpan="4">
+              Background="Black" 
+              Grid.ColumnSpan="4" 
+              Grid.RowSpan="2">
             <userControlPanel:UserControlPanel 
                 Label="Details"
-                Width="196"/>
+                Width="201"/>
         </Grid >
 
         <Grid 
               Grid.Column="1"
-              Grid.Row="4"
-              Grid.RowSpan="2" 
+              Grid.Row="3"
+              Grid.RowSpan="3" 
               Background="Black" 
               Width="Auto"
               Height="Auto">
@@ -251,7 +258,7 @@
 
                 </Grid>
             </ScrollViewer>
-        </Grid> 
+        </Grid>
 
     </Grid>
 </Window>
