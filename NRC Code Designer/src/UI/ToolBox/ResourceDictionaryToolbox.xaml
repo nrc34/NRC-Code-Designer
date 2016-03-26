@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:userControlToolBoxItem="clr-namespace:NRC_Code_Designer.src.UI.ToolBox">
+    <Grid x:Key="GridToolbox">
+        <StackPanel >
+            <userControlToolBoxItem:UserControlToolBoxItem 
+                Label="Class" 
+                ItemImage="{DynamicResource ImageClass}"/>
+            <userControlToolBoxItem:UserControlToolBoxItem 
+                Label="Interface" 
+                ItemImage="{DynamicResource ImageInterface}"/>
+        </StackPanel>
+    </Grid>
+</ResourceDictionary>

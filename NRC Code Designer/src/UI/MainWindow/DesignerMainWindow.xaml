@@ -12,70 +12,246 @@
         ScrollViewer.VerticalScrollBarVisibility="Disabled" 
         MinWidth="800" MinHeight="600" 
         SnapsToDevicePixels="True" 
-        WindowStyle="ThreeDBorderWindow">
+        WindowStyle="None">
     <Grid x:Name="GridMain">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="115"/>
+            <ColumnDefinition Width="32"/>
+            <ColumnDefinition Width="32"/>
+            <ColumnDefinition Width="32"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="50"/>
-            <RowDefinition Height="269*"/>
-            <RowDefinition Height="400*"/>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="19"/>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="174*"/>
+            <RowDefinition Height="270*"/>
         </Grid.RowDefinitions>
 
-        <Grid x:Name="gridToolBar" 
+        <Grid Grid.ColumnSpan="6"
               Grid.Row="0"
-              Grid.ColumnSpan="3"
+              Background="Black" 
+              Grid.RowSpan="2"
+              >
+            <Label FontFamily="{StaticResource FontTitle}"
+                   TextOptions.TextRenderingMode="Aliased"
+                   FontSize="24"
+                   Content="NRC Code Designer" 
+                   Foreground="#FF8F8F8F"/>
+        </Grid>
+
+        <Label x:Name="labelClose" 
+               Grid.Column="5"
+               Grid.Row="0"
+               Content="X"
+               ToolTip="Close"
+               Width="32"
+               Height="32"
+               Foreground="#FF8F8F8F" 
+               FontSize="14" 
+               Padding="0" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Center" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Background" Value="Black"/>
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <EventTrigger.Actions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation 
+                                        To="#FF3E3E42"
+                                        Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
+                                        Duration="0:0:0.1"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger.Actions>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <EventTrigger.Actions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation 
+                                        To="Black"
+                                        Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
+                                        Duration="0:0:0.1"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger.Actions>
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label x:Name="labelMinimize" 
+               Grid.Column="3"
+               Grid.Row="0"
+               Content="_"
+               ToolTip="Minimize"
+               Width="32"
+               Height="32"
+               Foreground="#FF8F8F8F" 
+               FontSize="14" 
+               Padding="0" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Center" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Background" Value="Black"/>
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <EventTrigger.Actions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation 
+                                        To="#FF3E3E42"
+                                        Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
+                                        Duration="0:0:0.1"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger.Actions>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <EventTrigger.Actions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation 
+                                        To="Black"
+                                        Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
+                                        Duration="0:0:0.1"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger.Actions>
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Label x:Name="labelNormal" 
+               Grid.Column="4"
+               Grid.Row="0"
+               Content="[]"
+               ToolTip="Reduce"
+               Width="32"
+               Height="32"
+               Foreground="#FF8F8F8F" 
+               FontSize="14" 
+               Padding="0" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Center" 
+               HorizontalContentAlignment="Center" 
+               VerticalContentAlignment="Center">
+            <Label.Style>
+                <Style TargetType="Label">
+                    <Setter Property="Background" Value="Black"/>
+                    <Style.Triggers>
+                        <EventTrigger RoutedEvent="MouseEnter">
+                            <EventTrigger.Actions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation 
+                                        To="#FF3E3E42"
+                                        Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
+                                        Duration="0:0:0.1"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger.Actions>
+                        </EventTrigger>
+                        <EventTrigger RoutedEvent="MouseLeave">
+                            <EventTrigger.Actions>
+                                <BeginStoryboard>
+                                    <Storyboard>
+                                        <ColorAnimation 
+                                        To="Black"
+                                        Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
+                                        Duration="0:0:0.1"/>
+                                    </Storyboard>
+                                </BeginStoryboard>
+                            </EventTrigger.Actions>
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Label.Style>
+        </Label>
+
+        <Grid Grid.Row="3"
+              Background="Black"
+              Grid.ColumnSpan="6"/>
+
+        <Grid x:Name="gridToolBar" 
+              Grid.Row="2"
+              Grid.ColumnSpan="6"
               Background="#FF2D2D30">
             <userControlToolBar:ToolBar 
                 HorizontalAlignment="Left"/>
         </Grid>
 
         <Grid x:Name="gridToolBox"
-              Grid.Row="1"
+              Grid.Row="4"
               Grid.Column="0"
               Grid.RowSpan="2"
               Background="Black">
-            <userControlToolBox:UserControlToolBox/>
+            <userControlPanel:UserControlPanel
+                Label="Toolbox"
+                Width="140"
+                PanelGrid="{DynamicResource GridToolbox}"/>
+        </Grid>
 
-        </Grid>
-        
         <Grid x:Name="gridProjectNamespacesTree"
-              Grid.Row="1"
+              Grid.Row="4"
               Grid.Column="2" 
-              Background="Black">
-            <userControlPanel:UserControlPanel 
+              Background="Black" 
+              Grid.ColumnSpan="4">
+            <userControlPanel:UserControlPanel
+                PanelGrid="{DynamicResource GridProjectNamespaces}"
                 Label="Project Namespaces"
-                Width="196"/>
+                Width="196"
+                Height="263"
+                VerticalAlignment="Top"/>
         </Grid>
-        
+
         <Grid x:Name="gridDetails"
-              Grid.Row="2"
+              Grid.Row="5"
               Grid.Column="2" 
-              Background="Black">
+              Background="Black" Grid.ColumnSpan="4">
             <userControlPanel:UserControlPanel 
                 Label="Details"
                 Width="196"/>
         </Grid >
 
-        <ScrollViewer x:Name="scrollViewerDesigner" 
+        <Grid 
               Grid.Column="1"
-              Grid.Row="1"
-              Grid.RowSpan="2" Background="Black" 
-              HorizontalScrollBarVisibility="Visible" >
-        
-        <Grid x:Name="gridDesigner"
-              Grid.Column="1"
-              Grid.Row="1"
-              Grid.RowSpan="2" Background="Black" 
-              ClipToBounds="True"
+              Grid.Row="4"
+              Grid.RowSpan="2" 
+              Background="Black" 
               Width="Auto"
-              Height="Auto"
-              ScrollViewer.HorizontalScrollBarVisibility="Auto" 
-              ScrollViewer.VerticalScrollBarVisibility="Auto"/>
-        </ScrollViewer>
+              Height="Auto">
+            <Border 
+                BorderThickness="1"
+                BorderBrush="{StaticResource BrushPanel}" CornerRadius="10"/>
+
+            <ScrollViewer x:Name="scrollViewerDesigner" 
+                          HorizontalScrollBarVisibility="Visible" 
+                          Margin="15">
+                <Grid x:Name="gridDesigner"
+                  Background="DarkGray"
+                  ClipToBounds="True"
+                  Width="1500"
+                  Height="1500">
+
+                </Grid>
+            </ScrollViewer>
+        </Grid> 
 
     </Grid>
 </Window>

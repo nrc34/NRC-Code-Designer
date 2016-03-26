@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,12 +41,34 @@ namespace NRC_Code_Designer.src.UI.ToolBox
 
         #endregion
 
+        #region Image DP
+
+        /// <summary>
+        /// Gets or sets the Image that is displayed in the toolBoxItem.
+        /// </summary>
+        public BitmapImage ItemImage
+        {
+            get { return (BitmapImage)GetValue(ItemImageProperty); }
+            set { SetValue(ItemImageProperty, value); }
+        }
+
+        /// <summary>
+        /// Label dependency property
+        /// </summary>
+        public static readonly DependencyProperty ItemImageProperty =
+            DependencyProperty.Register("ItemImage", typeof(BitmapImage),
+              typeof(UserControlToolBoxItem), new PropertyMetadata());
+
+        #endregion
+
 
         public UserControlToolBoxItem()
         {
             InitializeComponent();
 
             DataContext = this;
+
+            gridToolboxItem.MouseLeftButtonDown += (s, e) => { Debug.WriteLine("Clicked ItemToolbox!" + Label); };
         }
     }
 }

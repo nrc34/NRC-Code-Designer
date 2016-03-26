@@ -71,13 +71,14 @@
     <Compile Include="src\UI\ToolBar\ToolBar.xaml.cs">
       <DependentUpon>ToolBar.xaml</DependentUpon>
     </Compile>
-    <Compile Include="src\UI\ToolBox\UserControlToolBox.xaml.cs">
-      <DependentUpon>UserControlToolBox.xaml</DependentUpon>
-    </Compile>
     <Compile Include="src\UI\ToolBox\UserControlToolBoxItem.xaml.cs">
       <DependentUpon>UserControlToolBoxItem.xaml</DependentUpon>
     </Compile>
     <Page Include="res\Fonts\ResourceDictionaryFonts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="res\Images\ResourceDictionaryImages.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -101,7 +102,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="src\UI\Panel\ResourceDictionaryPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="src\UI\Panel\UserControlPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="src\UI\ProjectNamespaces\ResourceDictionaryProjectNamespaces.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -109,7 +118,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="src\UI\ToolBox\UserControlToolBox.xaml">
+    <Page Include="src\UI\ToolBox\ResourceDictionaryToolbox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -141,6 +150,15 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <Resource Include="res\Fonts\Bitwise.ttf" />
+    <Resource Include="res\Fonts\push.ttf" />
+    <Resource Include="res\Fonts\Acens.ttf" />
+    <Resource Include="res\Fonts\Dotrice-Regular.otf" />
+    <Resource Include="res\Fonts\Matrix Complex Wave NC.ttf" />
+    <Resource Include="res\Fonts\Matrix Complex NC.ttf" />
+    <Resource Include="res\Fonts\Receiptional Receipt.ttf" />
+    <Resource Include="res\Fonts\Renegade Mistress.ttf" />
+    <Resource Include="res\Fonts\Famirids.ttf" />
     <Resource Include="res\Fonts\Minecraftia.ttf" />
   </ItemGroup>
   <ItemGroup>
@@ -151,6 +169,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="doc\ToDo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="res\Images\class.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="res\Images\interface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="doc\TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

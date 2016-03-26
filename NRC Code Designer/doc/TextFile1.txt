@@ -1,0 +1,8 @@
+﻿<ScrollViewer x:Name="scrollViewerDesigner" 
+                  Grid.Column="1"
+                  Grid.Row="4"
+                  Grid.RowSpan="2" 
+                  Background="Black" 
+                  HorizontalScrollBarVisibility="Visible" >
+            <ContentPresenter Content="{DynamicResource gridDiagram}"/>
+        </ScrollViewer>

@@ -22,6 +22,26 @@ namespace NRC_Code_Designer.src.UI.Panel
     {
         public string Label { get; set; }
 
+        #region PanelGrid DP
+
+        /// <summary>
+        /// Gets or sets the Panel Grid which is bind to a resource dictionary.
+        /// </summary>
+        public Grid PanelGrid
+        {
+            get { return (Grid)GetValue(PanelGridProperty); }
+            set { SetValue(PanelGridProperty, value); }
+        }
+
+        /// <summary>
+        /// PanelGrid dependency property
+        /// </summary>
+        public static readonly DependencyProperty PanelGridProperty =
+            DependencyProperty.Register("PanelGrid", typeof(Grid),
+              typeof(UserControlPanel), new PropertyMetadata());
+
+        #endregion
+
         public UserControlPanel()
         {
             InitializeComponent();

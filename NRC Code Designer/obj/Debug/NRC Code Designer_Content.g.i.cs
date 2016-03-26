@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("doc/todo.txt")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("doc/textfile1.txt")]
 
 

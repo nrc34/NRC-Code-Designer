@@ -1,5 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:clr="clr-namespace:System;assembly=mscorlib">
-    <FontFamily x:Key="MinecraftiaFont">pack://application:,,,/res/Fonts/#Minecraftia</FontFamily> 
+    <FontFamily x:Key="PanelFont">pack://application:,,,/res/Fonts/#Bitwise</FontFamily>
+    <FontFamily x:Key="FontTitle">pack://application:,,,/res/Fonts/#Bitwise</FontFamily>
 </ResourceDictionary>

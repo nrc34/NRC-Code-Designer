@@ -14,27 +14,30 @@
             <RowDefinition Height="20"/>
             <RowDefinition Height="200*"/>
         </Grid.RowDefinitions>
-        <Polyline Fill="Blue"
+        <Polyline Fill="{StaticResource BrushPanel}"
                   Grid.Column="1"
                   Grid.Row="0"
                   Points="0,0 20,20 0,20"/>
         <Label Grid.Row="0"
                Grid.Column="0"
+               TextOptions.TextRenderingMode="Aliased"
                Content="{Binding Label}" 
-               Foreground="White" 
-               FontFamily="{StaticResource MinecraftiaFont}" 
+               Foreground="Black" 
+               FontFamily="{StaticResource PanelFont}" 
                Padding="0" 
                VerticalContentAlignment="Center" 
                HorizontalContentAlignment="Center" 
-               Background="Blue"/>
+               Background="{StaticResource BrushPanel}" 
+               FontSize="14"/>
+
+        <ContentPresenter Content="{Binding PanelGrid}"
+                          Grid.Row="1"
+                          Grid.ColumnSpan="2"/>
 
         <Border Grid.Row="1" 
                 Grid.ColumnSpan="2"
                 BorderThickness="1"
-                BorderBrush="Blue"/>
-        <Grid Grid.Row="1" 
-              Grid.ColumnSpan="2">
-        </Grid>
+                BorderBrush="{StaticResource BrushPanel}"/>
 
     </Grid>
 </UserControl>

@@ -19,10 +19,12 @@ C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC 
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\ToolBar\ToolBar.baml
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\ToolBar\ToolBar.g.cs
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\ToolBox\UserControlToolBox.baml
-C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\ToolBox\UserControlToolBox.g.cs
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\ToolBox\UserControlToolBoxItem.baml
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\ToolBox\UserControlToolBoxItem.g.cs
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\Panel\UserControlPanel.baml
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\Panel\UserControlPanel.g.cs
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\res\Fonts\ResourceDictionaryFonts.baml
+C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\ProjectNamespaces\ResourceDictionaryProjectNamespaces.baml
+C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\ToolBox\ResourceDictionaryToolbox.baml
+C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\res\Images\ResourceDictionaryImages.baml
+C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\Panel\ResourceDictionaryPanel.baml

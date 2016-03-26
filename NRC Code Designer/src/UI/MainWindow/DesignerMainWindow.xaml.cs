@@ -25,10 +25,21 @@ namespace NRC_Code_Designer
             InitializeComponent();
 
             Loaded += MainWindow_Loaded;
+
+            labelClose.MouseLeftButtonDown += (s, e) => { this.Close(); };
+            labelMinimize.MouseLeftButtonDown += (s, e) =>
+            {
+                this.WindowState = System.Windows.WindowState.Minimized;
+            };
+            labelNormal.MouseLeftButtonDown += (s, e) =>
+            {
+                this.WindowState = System.Windows.WindowState.Normal;
+            };
         }
 
         void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
+
             int jx = 0;
             var myBClass = new src.Core.Class("MyBClass" + jx, new Point(100 + 10 * jx, 200 + 10 * jx));
             myBClass.UserControl = new src.UI.Class.UserControlClass(myBClass);
