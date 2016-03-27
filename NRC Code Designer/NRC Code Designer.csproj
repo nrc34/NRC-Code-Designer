@@ -58,8 +58,11 @@
     <Compile Include="src\Core\Project\Class.cs" />
     <Compile Include="src\Core\Project\ClassAccessModifiers.cs" />
     <Compile Include="src\Core\Project\Entity.cs" />
+    <Compile Include="src\Core\Project\Field.cs" />
+    <Compile Include="src\Core\Project\FieldAccessModifier.cs" />
     <Compile Include="src\Core\Project\IClass.cs" />
     <Compile Include="src\Core\Project\IDisplayAble.cs" />
+    <Compile Include="src\Core\Project\Interface.cs" />
     <Compile Include="src\Core\Project\ISaveAble.cs" />
     <Compile Include="src\Core\Project\Project.cs" />
     <Compile Include="src\Core\Project\Property.cs" />

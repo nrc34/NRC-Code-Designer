@@ -21,11 +21,11 @@ namespace NRC_Code_Designer.src.UI.Class
     /// </summary>
     public partial class UserControlClass : UserControl
     {
-        private src.Core.Class class2Use;
+        private src.Core.Project.Class class2Use;
 
         private bool isMouseLeftButtonDown;
 
-        public UserControlClass(src.Core.Class class2Use)
+        public UserControlClass(src.Core.Project.Class class2Use)
         {
             InitializeComponent();
 

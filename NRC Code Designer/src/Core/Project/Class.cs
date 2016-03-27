@@ -9,13 +9,14 @@ using System.Threading.Tasks;
 using NRC_Code_Designer.src.Core;
 using System.Diagnostics;
 using NRC_Code_Designer.src.Core.Project;
+using System.Collections.ObjectModel;
 
-namespace NRC_Code_Designer.src.Core
+namespace NRC_Code_Designer.src.Core.Project
 {
-    public class Class : Project.Entity, IClass, IDisplayAble
+    public class Class : Core.Project.Entity, IClass, IDisplayAble
     {
         #region ... Fields ...
-        private src.Core.Class derivedFrom;
+        private src.Core.Project.Class derivedFrom;
         private Point position; 
         #endregion
 
@@ -51,7 +52,7 @@ namespace NRC_Code_Designer.src.Core
         /// <summary>
         /// Base class from wich this class derive from.
         /// </summary>
-        public src.Core.Class DerivedFrom
+        public src.Core.Project.Class DerivedFrom
         {
             get
             {
@@ -95,6 +96,11 @@ namespace NRC_Code_Designer.src.Core
         public Path InheritancePath { get; set; }
 
         /// <summary>
+        /// List of the Interfaces that the class implements.
+        /// </summary>
+        public ObservableCollection<Interface> Interfaces { get; set; }
+
+        /// <summary>
         /// List of class properties.
         /// </summary>
         public List<Property> Properties { get; set; } 
@@ -120,6 +126,8 @@ namespace NRC_Code_Designer.src.Core
             Name = name;
 
             AccessModifier = ClassAccessModifiers.@default;
+
+            Interfaces = new ObservableCollection<Interface>();
 
             Properties = new List<Property>();
 

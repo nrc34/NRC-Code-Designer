@@ -48,7 +48,7 @@ namespace NRC_Code_Designer
             detailsPanel.PanelContent = new UserControlClassDetails();
 
             int jx = 0;
-            var myBClass = new src.Core.Class("MyBClass" + jx, new Point(100 + 10 * jx, 200 + 10 * jx));
+            var myBClass = new src.Core.Project.Class("MyBClass" + jx, new Point(100 + 10 * jx, 200 + 10 * jx));
             myBClass.UserControl = new src.UI.Class.UserControlClass(myBClass);
             for (int i = 0; i < 5; i++)
             {
@@ -62,7 +62,7 @@ namespace NRC_Code_Designer
             for (int j = 0; j < 3; j++)
             {
                 
-                var myClass = new src.Core.Class("MyClass" + j, new Point(100 + 50 * j, 200 + 50 * j));
+                var myClass = new src.Core.Project.Class("MyClass" + j, new Point(100 + 50 * j, 200 + 50 * j));
                 myClass.UserControl = new src.UI.Class.UserControlClass(myClass);
 
 

@@ -13,7 +13,7 @@ namespace NRC_Code_Designer.src.Core.Project
         /// <summary>
         /// Base class from wich this class derive from.
         /// </summary>
-        src.Core.Class DerivedFrom { get; set; }
+        src.Core.Project.Class DerivedFrom { get; set; }
 
         /// <summary>
         /// List of class properties.

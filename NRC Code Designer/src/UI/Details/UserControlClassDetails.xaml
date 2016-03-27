@@ -55,6 +55,7 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="80"/>
                         <ColumnDefinition Width="20"/>
+                        <ColumnDefinition Width="20"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Label 
@@ -62,22 +63,28 @@
                         Foreground="White"
                         Content="Implements"
                         FontFamily="{StaticResource FontClassDetails}"/>
-                    <Label
+                    <Label x:Name="labelAddInterface"
                         Grid.Column="1"
                         Style="{StaticResource StyleLabelMouseOver}"
                         ToolTip="Implement Interface"
                         Foreground="White"
                         Content="+"
                         FontFamily="{StaticResource FontClassDetails}"/>
+                    <Label x:Name="labelRemoveInterface"
+                        Grid.Column="2"
+                        Style="{StaticResource StyleLabelMouseOver}"
+                        ToolTip="Remove Interface"
+                        Foreground="White"
+                        Content="-"
+                        FontFamily="{StaticResource FontClassDetails}"/>
                 </Grid>
-            
-            <Expander
-                  >
-                <ListBox 
-                 />
-            </Expander>
 
-            <Grid>
+                <Expander x:Name="expanderInterfaces">
+                    <ListBox x:Name="interfaces"
+                             DisplayMemberPath="Name"/>
+                </Expander>
+
+                <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="80"/>
                         <ColumnDefinition Width="20"/>
@@ -96,7 +103,7 @@
                         Content="+"
                         FontFamily="{StaticResource FontClassDetails}"/>
                 </Grid>
-            <Expander
+                <Expander
                   >
                 <ListBox 
                  />
