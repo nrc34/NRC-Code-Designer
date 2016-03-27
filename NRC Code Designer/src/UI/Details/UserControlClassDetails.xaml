@@ -1,0 +1,181 @@
+﻿<UserControl x:Class="NRC_Code_Designer.src.UI.Details.UserControlClassDetails"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="1"
+               Content="Name"
+               Foreground="White" 
+               FontFamily="{StaticResource FontClassDetails}"/>
+        <TextBox Grid.Row="1"
+                 Margin="48,2,10,2"
+                 Width="142"
+                 Height="16"/>
+
+        <Label Grid.Row="2"
+               Foreground="White"
+               Content="Derived from"
+               FontFamily="{StaticResource FontClassDetails}"/>
+        <ComboBox Grid.Row="2"
+                  Height="16"
+                  Margin="10,22,10,2"/>
+
+        <Label Grid.Row="3"
+               Foreground="White"
+               Content="Access"
+               FontFamily="{StaticResource FontClassDetails}"/>
+        <ComboBox Grid.Row="3"
+                  Height="16"
+                  Margin="80,2,10,2"/>
+
+        <Label Grid.Row="4"
+               Foreground="White"
+               Content="Inheritance"
+               FontFamily="{StaticResource FontClassDetails}"/>
+        <ComboBox Grid.Row="4"
+                  Height="16"
+                  Margin="80,2,10,2"/>
+        <ScrollViewer Grid.Row="5"
+                      Margin="0,2,10,5">
+            <StackPanel 
+                    Orientation="Vertical">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label 
+                        Grid.Column="0"
+                        Foreground="White"
+                        Content="Implements"
+                        FontFamily="{StaticResource FontClassDetails}"/>
+                    <Label
+                        Grid.Column="1"
+                        Style="{StaticResource StyleLabelMouseOver}"
+                        ToolTip="Implement Interface"
+                        Foreground="White"
+                        Content="+"
+                        FontFamily="{StaticResource FontClassDetails}"/>
+                </Grid>
+            
+            <Expander
+                  >
+                <ListBox 
+                 />
+            </Expander>
+
+            <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label 
+                        Grid.Column="0"
+                        Foreground="White"
+                        Content="Fields"
+                        FontFamily="{StaticResource FontClassDetails}"/>
+                    <Label
+                        Grid.Column="1"
+                        Style="{StaticResource StyleLabelMouseOver}"
+                        ToolTip="Add a field"
+                        Foreground="White"
+                        Content="+"
+                        FontFamily="{StaticResource FontClassDetails}"/>
+                </Grid>
+            <Expander
+                  >
+                <ListBox 
+                 />
+            </Expander>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label 
+                        Grid.Column="0"
+                        Foreground="White"
+                        Content="Properties"
+                        FontFamily="{StaticResource FontClassDetails}"/>
+                    <Label
+                        Grid.Column="1"
+                        Style="{StaticResource StyleLabelMouseOver}"
+                        ToolTip="Add a propertie"
+                        Foreground="White"
+                        Content="+"
+                        FontFamily="{StaticResource FontClassDetails}"/>
+                </Grid>
+                <Expander>
+                <ListBox 
+                 />
+            </Expander>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label 
+                        Grid.Column="0"
+                        Foreground="White"
+                        Content="Methods"
+                        FontFamily="{StaticResource FontClassDetails}"/>
+                    <Label
+                        Grid.Column="1"
+                        Style="{StaticResource StyleLabelMouseOver}"
+                        ToolTip="Add a method"
+                        Foreground="White"
+                        Content="+"
+                        FontFamily="{StaticResource FontClassDetails}"/>
+                </Grid>
+                <Expander>
+                <ListBox 
+                 />
+            </Expander>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="20"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label 
+                        Grid.Column="0"
+                        Foreground="White"
+                        Content="Events"
+                        FontFamily="{StaticResource FontClassDetails}"/>
+                    <Label
+                        Grid.Column="1"
+                        Style="{StaticResource StyleLabelMouseOver}"
+                        ToolTip="Add an event"
+                        Foreground="White"
+                        Content="+"
+                        FontFamily="{StaticResource FontClassDetails}"/>
+                </Grid>
+                <Expander>
+                <ListBox 
+                 />
+            </Expander>
+            
+        </StackPanel>
+        </ScrollViewer>
+        
+    </Grid>
+</UserControl>

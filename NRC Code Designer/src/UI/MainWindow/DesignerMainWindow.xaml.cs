@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using NRC_Code_Designer.src.UI.ToolBox;
+using NRC_Code_Designer.src.UI.Details;
 
 namespace NRC_Code_Designer
 {
@@ -35,10 +37,15 @@ namespace NRC_Code_Designer
             {
                 this.WindowState = System.Windows.WindowState.Normal;
             };
+
         }
 
         void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
+
+            toolBoxPanel.PanelContent = new UserControlToolBox();
+            detailsPanel.Label = "Class Details";
+            detailsPanel.PanelContent = new UserControlClassDetails();
 
             int jx = 0;
             var myBClass = new src.Core.Class("MyBClass" + jx, new Point(100 + 10 * jx, 200 + 10 * jx));

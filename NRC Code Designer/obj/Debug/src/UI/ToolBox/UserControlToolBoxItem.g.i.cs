@@ -9,7 +9,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using NRC_Code_Designer.src.UI.ToolBox;
 using System;
 using System.Diagnostics;
 using System.Windows;

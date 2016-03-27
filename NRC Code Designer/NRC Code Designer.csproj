@@ -36,6 +36,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -65,11 +67,17 @@
     <Compile Include="src\UI\Class\UserControlClass.xaml.cs">
       <DependentUpon>UserControlClass.xaml</DependentUpon>
     </Compile>
+    <Compile Include="src\UI\Details\UserControlClassDetails.xaml.cs">
+      <DependentUpon>UserControlClassDetails.xaml</DependentUpon>
+    </Compile>
     <Compile Include="src\UI\Panel\UserControlPanel.xaml.cs">
       <DependentUpon>UserControlPanel.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\UI\ToolBar\ToolBar.xaml.cs">
       <DependentUpon>ToolBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="src\UI\ToolBox\UserControlToolBox.xaml.cs">
+      <DependentUpon>UserControlToolBox.xaml</DependentUpon>
     </Compile>
     <Compile Include="src\UI\ToolBox\UserControlToolBoxItem.xaml.cs">
       <DependentUpon>UserControlToolBoxItem.xaml</DependentUpon>
@@ -79,6 +87,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="res\Images\ResourceDictionaryImages.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="src\UI\Details\ResourceDictionaryClassDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="src\UI\Details\UserControlClassDetails.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -114,11 +130,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="src\UI\Styles\ResourceDictionaryStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="src\UI\ToolBar\ToolBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="src\UI\ToolBox\ResourceDictionaryToolbox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="src\UI\ToolBox\UserControlToolBox.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -164,9 +188,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="src\UI\Details\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="doc\ToDo.txt" />
   </ItemGroup>

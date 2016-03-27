@@ -5,12 +5,14 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="src/UI/Styles/ResourceDictionaryStyles.xaml"/>
                 <ResourceDictionary Source="src/UI/Class/ResourcesDicClass.xaml" />
                 <ResourceDictionary Source="res/Fonts/ResourceDictionaryFonts.xaml"/>
                 <ResourceDictionary Source="src/UI/ProjectNamespaces/ResourceDictionaryProjectNamespaces.xaml"/>
                 <ResourceDictionary Source="src/UI/ToolBox/ResourceDictionaryToolbox.xaml"/>
                 <ResourceDictionary Source="res/Images/ResourceDictionaryImages.xaml"/>
                 <ResourceDictionary Source="src/UI/Panel/ResourceDictionaryPanel.xaml"/>
+                <ResourceDictionary Source="src/UI/Details/ResourceDictionaryClassDetails.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

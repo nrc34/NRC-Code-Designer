@@ -45,6 +45,7 @@
         <Label x:Name="labelClose" 
                Grid.Column="5"
                Grid.Row="0"
+               Style="{StaticResource StyleLabelMouseOver}"
                Content="X"
                ToolTip="Close"
                Width="32"
@@ -57,42 +58,12 @@
                VerticalAlignment="Center" 
                HorizontalContentAlignment="Center" 
                VerticalContentAlignment="Center">
-            <Label.Style>
-                <Style TargetType="Label">
-                    <Setter Property="Background" Value="Black"/>
-                    <Style.Triggers>
-                        <EventTrigger RoutedEvent="MouseEnter">
-                            <EventTrigger.Actions>
-                                <BeginStoryboard>
-                                    <Storyboard>
-                                        <ColorAnimation 
-                                        To="#FF3E3E42"
-                                        Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
-                                        Duration="0:0:0.1"/>
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </EventTrigger.Actions>
-                        </EventTrigger>
-                        <EventTrigger RoutedEvent="MouseLeave">
-                            <EventTrigger.Actions>
-                                <BeginStoryboard>
-                                    <Storyboard>
-                                        <ColorAnimation 
-                                        To="Black"
-                                        Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
-                                        Duration="0:0:0.1"/>
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </EventTrigger.Actions>
-                        </EventTrigger>
-                    </Style.Triggers>
-                </Style>
-            </Label.Style>
         </Label>
 
         <Label x:Name="labelMinimize" 
                Grid.Column="3"
                Grid.Row="0"
+               Style="{StaticResource StyleLabelMouseOver}"
                Content="_"
                ToolTip="Minimize"
                Width="32"
@@ -105,42 +76,12 @@
                VerticalAlignment="Center" 
                HorizontalContentAlignment="Center" 
                VerticalContentAlignment="Center">
-            <Label.Style>
-                <Style TargetType="Label">
-                    <Setter Property="Background" Value="Black"/>
-                    <Style.Triggers>
-                        <EventTrigger RoutedEvent="MouseEnter">
-                            <EventTrigger.Actions>
-                                <BeginStoryboard>
-                                    <Storyboard>
-                                        <ColorAnimation 
-                                        To="#FF3E3E42"
-                                        Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
-                                        Duration="0:0:0.1"/>
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </EventTrigger.Actions>
-                        </EventTrigger>
-                        <EventTrigger RoutedEvent="MouseLeave">
-                            <EventTrigger.Actions>
-                                <BeginStoryboard>
-                                    <Storyboard>
-                                        <ColorAnimation 
-                                        To="Black"
-                                        Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
-                                        Duration="0:0:0.1"/>
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </EventTrigger.Actions>
-                        </EventTrigger>
-                    </Style.Triggers>
-                </Style>
-            </Label.Style>
         </Label>
 
         <Label x:Name="labelNormal" 
                Grid.Column="4"
                Grid.Row="0"
+               Style="{StaticResource StyleLabelMouseOver}"
                Content="[]"
                ToolTip="Reduce"
                Width="32"
@@ -153,37 +94,6 @@
                VerticalAlignment="Center" 
                HorizontalContentAlignment="Center" 
                VerticalContentAlignment="Center">
-            <Label.Style>
-                <Style TargetType="Label">
-                    <Setter Property="Background" Value="Black"/>
-                    <Style.Triggers>
-                        <EventTrigger RoutedEvent="MouseEnter">
-                            <EventTrigger.Actions>
-                                <BeginStoryboard>
-                                    <Storyboard>
-                                        <ColorAnimation 
-                                        To="#FF3E3E42"
-                                        Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
-                                        Duration="0:0:0.1"/>
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </EventTrigger.Actions>
-                        </EventTrigger>
-                        <EventTrigger RoutedEvent="MouseLeave">
-                            <EventTrigger.Actions>
-                                <BeginStoryboard>
-                                    <Storyboard>
-                                        <ColorAnimation 
-                                        To="Black"
-                                        Storyboard.TargetProperty="(Grid.Background).(SolidColorBrush.Color)"
-                                        Duration="0:0:0.1"/>
-                                    </Storyboard>
-                                </BeginStoryboard>
-                            </EventTrigger.Actions>
-                        </EventTrigger>
-                    </Style.Triggers>
-                </Style>
-            </Label.Style>
         </Label>
 
         <Grid Grid.Row="2"
@@ -203,10 +113,10 @@
               Grid.Column="0"
               Grid.RowSpan="3"
               Background="Black">
-            <userControlPanel:UserControlPanel
+            <userControlPanel:UserControlPanel 
+                x:Name="toolBoxPanel"
                 Label="Toolbox"
-                Width="140"
-                PanelGrid="{DynamicResource GridToolbox}"/>
+                Width="140"/>
         </Grid>
 
         <Grid x:Name="gridProjectNamespacesTree"
@@ -232,7 +142,7 @@
               Grid.ColumnSpan="4" 
               Grid.RowSpan="2">
             <userControlPanel:UserControlPanel 
-                Label="Details"
+                x:Name="detailsPanel" 
                 Width="201"/>
         </Grid >
 

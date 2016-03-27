@@ -30,7 +30,7 @@
                Background="{StaticResource BrushPanel}" 
                FontSize="14"/>
 
-        <ContentPresenter Content="{Binding PanelGrid}"
+        <ContentPresenter Content="{Binding PanelContent}"
                           Grid.Row="1"
                           Grid.ColumnSpan="2"/>
 

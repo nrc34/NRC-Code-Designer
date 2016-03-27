@@ -7,39 +7,13 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="150">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="130"/>
-            <ColumnDefinition Width="20"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="20"/>
-            <RowDefinition Height="200*"/>
-        </Grid.RowDefinitions>
-        <Polyline Fill="Blue"
-                  Grid.Column="1"
-                  Grid.Row="0"
-                  Points="0,0 20,20 0,20"/>
-        <Label Grid.Row="0"
-               Grid.Column="0"
-               Content="ToolBox" 
-               Foreground="White" 
-               FontFamily="Consolas" 
-               Padding="0" 
-               VerticalContentAlignment="Center" 
-               HorizontalContentAlignment="Center" 
-               Background="Blue"/>
-        
-        <Border Grid.Row="1" 
-                Grid.ColumnSpan="2"
-                BorderThickness="1"
-                BorderBrush="Blue"/>
-        <Grid Grid.Row="1" 
-              Grid.ColumnSpan="2">
-            <StackPanel >
-                <userControlToolBoxItem:UserControlToolBoxItem Label="Class"/>
-                <userControlToolBoxItem:UserControlToolBoxItem Label="Interface"/>
-            </StackPanel>
-        </Grid>
-        
+        <StackPanel >
+            <userControlToolBoxItem:UserControlToolBoxItem 
+                Label="Class" 
+                ItemImage="{DynamicResource ImageClass}"/>
+            <userControlToolBoxItem:UserControlToolBoxItem 
+                Label="Interface" 
+                ItemImage="{DynamicResource ImageInterface}"/>
+        </StackPanel>    
     </Grid>
 </UserControl>

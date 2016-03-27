@@ -20,24 +20,42 @@ namespace NRC_Code_Designer.src.UI.Panel
     /// </summary>
     public partial class UserControlPanel : UserControl
     {
-        public string Label { get; set; }
-
-        #region PanelGrid DP
+        #region Label DP
 
         /// <summary>
-        /// Gets or sets the Panel Grid which is bind to a resource dictionary.
+        /// Gets or sets the Label Content.
         /// </summary>
-        public Grid PanelGrid
+        public string Label
         {
-            get { return (Grid)GetValue(PanelGridProperty); }
-            set { SetValue(PanelGridProperty, value); }
+            get { return (string)GetValue(LabelProperty); }
+            set { SetValue(LabelProperty, value); }
         }
 
         /// <summary>
-        /// PanelGrid dependency property
+        /// Label dependency property
         /// </summary>
-        public static readonly DependencyProperty PanelGridProperty =
-            DependencyProperty.Register("PanelGrid", typeof(Grid),
+        public static readonly DependencyProperty LabelProperty =
+            DependencyProperty.Register("Label", typeof(string),
+              typeof(UserControlPanel), new PropertyMetadata(string.Empty));
+
+        #endregion
+
+        #region PanelContent DP
+
+        /// <summary>
+        /// Gets or sets the Panel Content.
+        /// </summary>
+        public UIElement PanelContent
+        {
+            get { return (UIElement)GetValue(PanelContentProperty); }
+            set { SetValue(PanelContentProperty, value); }
+        }
+
+        /// <summary>
+        /// PanelContent dependency property
+        /// </summary>
+        public static readonly DependencyProperty PanelContentProperty =
+            DependencyProperty.Register("PanelContent", typeof(UIElement),
               typeof(UserControlPanel), new PropertyMetadata());
 
         #endregion
