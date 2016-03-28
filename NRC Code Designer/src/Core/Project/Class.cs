@@ -103,7 +103,12 @@ namespace NRC_Code_Designer.src.Core.Project
         /// <summary>
         /// List of class properties.
         /// </summary>
-        public List<Property> Properties { get; set; } 
+        public ObservableCollection<Property> Properties { get; set; }
+
+        /// <summary>
+        /// List of class fields.
+        /// </summary>
+        public ObservableCollection<Field> Fields { get; set; }
         #endregion
 
         #region ... Methods ...
@@ -129,7 +134,9 @@ namespace NRC_Code_Designer.src.Core.Project
 
             Interfaces = new ObservableCollection<Interface>();
 
-            Properties = new List<Property>();
+            Fields = new ObservableCollection<Field>();
+
+            Properties = new ObservableCollection<Property>();
 
             Position = new Point(0, 0);
         }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace NRC_Code_Designer.src.Core.Project
 {
@@ -18,6 +19,6 @@ namespace NRC_Code_Designer.src.Core.Project
         /// <summary>
         /// List of class properties.
         /// </summary>
-        List<Property> Properties { get; set; }
+        ObservableCollection<Property> Properties { get; set; }
     }
 }

@@ -29,7 +29,9 @@ namespace NRC_Code_Designer.src.UI.Details
 
             @class = new Core.Project.Class("MyClass");
 
-            interfaces.ItemsSource = @class.Interfaces;
+            listBoxInterfaces.ItemsSource = @class.Interfaces;
+            listBoxFields.ItemsSource = @class.Fields;
+
 
             labelAddInterface.MouseLeftButtonDown += (s, e) => 
             {
@@ -41,9 +43,24 @@ namespace NRC_Code_Designer.src.UI.Details
 
             labelRemoveInterface.MouseLeftButtonDown += (s, e) =>
             {
-                if (interfaces.SelectedItem == null) return;
+                if (listBoxInterfaces.SelectedItem == null) return;
 
-                @class.Interfaces.Remove(interfaces.SelectedItem as Interface);
+                @class.Interfaces.
+                    Remove(listBoxInterfaces.SelectedItem as Interface);
+            };
+
+            labelAddField.MouseLeftButtonDown += (s, e) =>
+            {
+                @class.Fields.Add(new src.Core.Project.Field());
+                expanderFields.IsExpanded = true;
+            };
+
+            labelRemoveField.MouseLeftButtonDown += (s, e) =>
+            {
+                if (listBoxFields.SelectedItem == null) return;
+
+                @class.Fields.
+                   Remove(listBoxFields.SelectedItem as src.Core.Project.Field);
             };
         }
     }

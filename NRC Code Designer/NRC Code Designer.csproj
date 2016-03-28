@@ -70,6 +70,9 @@
     <Compile Include="src\UI\Class\UserControlClass.xaml.cs">
       <DependentUpon>UserControlClass.xaml</DependentUpon>
     </Compile>
+    <Compile Include="src\UI\Details\Field\FieldInfo.xaml.cs">
+      <DependentUpon>FieldInfo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="src\UI\Details\UserControlClassDetails.xaml.cs">
       <DependentUpon>UserControlClassDetails.xaml</DependentUpon>
     </Compile>
@@ -90,6 +93,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="res\Images\ResourceDictionaryImages.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="src\UI\Details\Field\FieldInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

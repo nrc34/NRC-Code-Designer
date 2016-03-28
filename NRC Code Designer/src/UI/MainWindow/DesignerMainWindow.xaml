@@ -127,6 +127,7 @@
             <userControlPanel:UserControlPanel
                 Label="Project Namespaces"
                 Width="201"
+                PanelContent="{StaticResource GridProjectNamespaces}"
                 />
         </Grid>
         

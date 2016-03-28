@@ -34,3 +34,5 @@ C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC 
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\Details\UserControlClassDetails.baml
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\Details\UserControlClassDetails.g.cs
 C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\Styles\ResourceDictionaryStyles.baml
+C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\Details\Field\FieldInfo.baml
+C:\Users\Nuno Costa\documents\visual studio 2013\Projects\NRC Code Designer\NRC Code Designer\obj\Debug\src\UI\Details\Field\FieldInfo.g.cs

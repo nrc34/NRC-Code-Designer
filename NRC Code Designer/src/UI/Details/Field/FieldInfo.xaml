@@ -1,0 +1,89 @@
+﻿<UserControl x:Class="NRC_Code_Designer.src.UI.Details.Field.FieldInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="60" d:DesignWidth="160">
+    <Grid Width="165"
+          Height="60">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35"/>
+            <ColumnDefinition Width="125"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0"
+                Grid.RowSpan="3"
+                Grid.ColumnSpan="2"
+                BorderThickness="1"/>
+
+        <ComboBox x:Name="comboBoxAccess" Height="16" 
+                  Width="121" 
+                  Grid.Row="0"
+                  Margin="2" 
+                  HorizontalAlignment="Left" 
+                  Grid.Column="1"
+                  SelectedItem="private"
+                  FontFamily="Consolas"
+                  FontSize="10"
+                  Foreground="Black"
+                  TextOptions.TextRenderingMode="ClearType"/>
+
+        <TextBox Grid.Row="1"
+                 Grid.Column="1"
+                 Height="16"
+                 Width="121"
+                 Margin="2" 
+                 Text="type" 
+                 FontFamily="Consolas"
+                 FontSize="11"
+                 Foreground="#38AE79"
+                 Background="Black"
+                 TextOptions.TextRenderingMode="ClearType"/>
+
+        <TextBox Grid.Row="2" 
+                 Grid.Column="1"
+                 Height="16"
+                 Width="121"
+                 Margin="2" 
+                 Text="name" 
+                 FontFamily="Consolas"
+                 FontSize="11"
+                 Foreground="#A1B5C5"
+                 Background="Black"
+                 TextOptions.TextRenderingMode="ClearType"/>
+        
+        <Label Grid.Row="0"
+               Grid.Column="0"
+               Content="access"
+               Foreground="White"
+               FontSize="10"
+               Padding="0,5,0,0"
+               FontFamily="{StaticResource PanelFont}"
+               HorizontalAlignment="Center"/>
+
+        <Label Grid.Row="1"
+               Grid.Column="0"
+               Content="type"
+               Foreground="White"
+               FontSize="10"
+               Padding="0,5,0,0"
+               FontFamily="{StaticResource PanelFont}"
+               HorizontalAlignment="Center"/>
+
+        <Label Grid.Row="2"
+               Grid.Column="0"
+               Content="name"
+               Foreground="White"
+               FontSize="10"
+               Padding="0,5,0,0"
+               FontFamily="{StaticResource PanelFont}"
+               HorizontalAlignment="Center"/>
+
+    </Grid>
+</UserControl>

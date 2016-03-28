@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:fieldControl="clr-namespace:NRC_Code_Designer.src.UI.Details.Field"
              mc:Ignorable="d" 
              d:DesignHeight="800" d:DesignWidth="200">
     <Grid>
@@ -58,11 +59,13 @@
                         <ColumnDefinition Width="20"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
+                    
                     <Label 
                         Grid.Column="0"
                         Foreground="White"
                         Content="Implements"
                         FontFamily="{StaticResource FontClassDetails}"/>
+                    
                     <Label x:Name="labelAddInterface"
                         Grid.Column="1"
                         Style="{StaticResource StyleLabelMouseOver}"
@@ -70,6 +73,7 @@
                         Foreground="White"
                         Content="+"
                         FontFamily="{StaticResource FontClassDetails}"/>
+                    
                     <Label x:Name="labelRemoveInterface"
                         Grid.Column="2"
                         Style="{StaticResource StyleLabelMouseOver}"
@@ -80,13 +84,17 @@
                 </Grid>
 
                 <Expander x:Name="expanderInterfaces">
-                    <ListBox x:Name="interfaces"
+                    <ListBox x:Name="listBoxInterfaces"
+                             Background="{x:Null}" 
+                             BorderBrush="{x:Null}"
+                             Foreground="White"
                              DisplayMemberPath="Name"/>
                 </Expander>
 
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="20"/>
                         <ColumnDefinition Width="20"/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
@@ -95,19 +103,38 @@
                         Foreground="White"
                         Content="Fields"
                         FontFamily="{StaticResource FontClassDetails}"/>
-                    <Label
-                        Grid.Column="1"
-                        Style="{StaticResource StyleLabelMouseOver}"
-                        ToolTip="Add a field"
-                        Foreground="White"
-                        Content="+"
-                        FontFamily="{StaticResource FontClassDetails}"/>
+                    
+                    <Label x:Name="labelAddField"
+                           Grid.Column="1"
+                           Style="{StaticResource StyleLabelMouseOver}"
+                           ToolTip="Add field"
+                           Foreground="White"
+                           Content="+"
+                           FontFamily="{StaticResource FontClassDetails}"/>
+                    
+                    <Label x:Name="labelRemoveField"
+                           Grid.Column="2"
+                           Style="{StaticResource StyleLabelMouseOver}"
+                           ToolTip="Remove field"
+                           Foreground="White"
+                           Content="-"
+                           FontFamily="{StaticResource FontClassDetails}"/>
                 </Grid>
-                <Expander
-                  >
-                <ListBox 
-                 />
-            </Expander>
+                <Expander x:Name="expanderFields"
+                          BorderThickness="0">
+                    <ListBox x:Name="listBoxFields" 
+                             BorderThickness="0" 
+                             Background="{x:Null}" 
+                             BorderBrush="{x:Null}" 
+                             ScrollViewer.HorizontalScrollBarVisibility="Disabled"
+                             ScrollViewer.VerticalScrollBarVisibility="Disabled" >
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <fieldControl:FieldInfo/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </Expander>
 
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -128,10 +155,10 @@
                         Content="+"
                         FontFamily="{StaticResource FontClassDetails}"/>
                 </Grid>
-                <Expander>
-                <ListBox 
-                 />
-            </Expander>
+                <Expander  >
+                    <ListBox  Background="{x:Null}" 
+                              BorderBrush="{x:Null}"/>
+                </Expander>
 
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -152,10 +179,10 @@
                         Content="+"
                         FontFamily="{StaticResource FontClassDetails}"/>
                 </Grid>
-                <Expander>
-                <ListBox 
-                 />
-            </Expander>
+                <Expander  >
+                    <ListBox Background="{x:Null}" 
+                             BorderBrush="{x:Null}"/>
+                </Expander>
 
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -177,12 +204,12 @@
                         FontFamily="{StaticResource FontClassDetails}"/>
                 </Grid>
                 <Expander>
-                <ListBox 
-                 />
-            </Expander>
-            
-        </StackPanel>
+                    <ListBox Background="{x:Null}" 
+                             BorderBrush="{x:Null}" />
+                </Expander>
+
+            </StackPanel>
         </ScrollViewer>
-        
+
     </Grid>
 </UserControl>

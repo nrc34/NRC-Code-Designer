@@ -10,6 +10,8 @@ namespace NRC_Code_Designer.src.Core.Project
     public class Field : INotifyPropertyChanged
     {
         private string name;
+        private FieldAccessModifier access;
+        private string type;
 
         /// <summary>
         /// Interface name.
@@ -24,9 +26,9 @@ namespace NRC_Code_Designer.src.Core.Project
             }
         }
 
-
-        private FieldAccessModifier access;
-
+        /// <summary>
+        /// Field access modifier.
+        /// </summary>
         public FieldAccessModifier Access
         {
             get { return access; }
@@ -36,10 +38,10 @@ namespace NRC_Code_Designer.src.Core.Project
                 OnPropertyChanged(new PropertyChangedEventArgs("Access"));
             }
         }
-
-
-        private string type;
-
+        
+        /// <summary>
+        /// Field type.
+        /// </summary>
         public string Type
         {
             get { return type; }
